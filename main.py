@@ -8,8 +8,8 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
 # Configuration for Google OAuth
-app.config['GOOGLE_CLIENT_ID'] = '1013600742983-6vh10vesnorpdsecvku12up3gk1l0hsd.apps.googleusercontent.com'
-app.config['GOOGLE_CLIENT_SECRET'] = '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'
+app.config['GOOGLE_CLIENT_ID'] = '1******m'
+app.config['GOOGLE_CLIENT_SECRET'] = 'G******H'
 app.config['GOOGLE_DISCOVERY_URL'] = "https://accounts.google.com/.well-known/openid-configuration"
 
 # Initialize OAuth
