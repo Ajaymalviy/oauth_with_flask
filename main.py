@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, session
 from authlib.integrations.flask_client import OAuth
-import os
+import oi, request
 
 app = Flask(__name__)
 
@@ -26,14 +26,7 @@ google = oauth.register(
     # authorize_params=None,
     # access_token_url='https://accounts.google.com/o/oauth2/token',
     # refresh_token_url=None,
-    client_kwargs={'scope': 'openid profile email',
-                   'redirect_uri': 'http://localhost:5000/auth'},
-)
-
-
-
-
-import requests
+    client_kwargs={'scope': 'openid profile 
 
 google_config_url = "https://accounts.google.com/.well-known/openid-configuration"
 response = requests.get(google_config_url)
