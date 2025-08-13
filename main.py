@@ -10,9 +10,7 @@ app.secret_key = os.urandom(24)
 # Configuration for Google OAuth
 app.config['GOOGLE_CLIENT_ID'] = '1******m'
 app.config['GOOGLE_CLIENT_SECRET'] = 'G******H'
-app.config['GOOGLE_DISCOVERY_URL'] = "https://accounts.google.com/.well-known/openid-configuration"
-
-# Initialize OAuth
+app.config['GOOGLE_DISCOVERY_URL'] = 
 oauth = OAuth(app)
 
 # Create a Google OAuth client
